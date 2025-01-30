@@ -8,7 +8,6 @@
     <title>Notes des élèves</title>
 </head>
 <body>
-    <div class="container">
         <nav class="navbar">
             <div class="navbar-logo">Espace Elève</div>
             <div class="menu-toggle" onclick="toggleMenu()">
@@ -19,14 +18,17 @@
             <div class="navbar-menu">
                 <a href="#">Emploi du temps</a>
                 <a href="#">Devoir</a>
+                <a href="#">Mail</a>
                 <a href="#">Notes</a>
                 <a href="#">Présence</a>
             </div>
             <button class="navbar-btn">Déconnexion</button>
         </nav>
+            <h1>Bonjour, Mathis</h1>
             <div class="note">
             <div class="schedule">
                 <h2>Emploi du Temps</h2>
+                    <h3>Lundi</h3>
                 <div class="card">
                     <div class="course-title">Mathématiques</div>
                     <div class="course-time">08:00 - 10:00</div>
@@ -48,7 +50,28 @@
                     <div class="course-time">15:00 - 17:00</div>
                 </div>
             </div>
-            <table>
+            
+                <div class="retard">
+                    <h2>Retard</h2>
+             
+                    <div class="card">
+                        <p>Nombre de retards : 3</p>
+                    </div>
+                    <div class="card">
+                        <p>Retards justifiés : 1</p>
+                    </div>
+                    <div class="card">
+                        <p>Retards non justifiés : 2</p>
+                    </div>
+                    <div class="card">
+                        <p>Absences : 1</p>
+                    </div>
+                </div>
+                <div class="Mail">
+                    <p>Nombre de retards : 3</p>
+
+                </div>
+            <!-- <table>
                 <tr>
                     <th>Matières</th>
                     <th>Professeurs</th> 
@@ -121,19 +144,7 @@
                     <td>13</td>
                     <td>13</td>
                 </tr>
-            </table>
+            </table> -->
         </div>
-        <div class="main-content">
-            <div class="retard">
-                <h2>Retard</h2>
-                <div class="retard-info">
-                    <p>Nombre de retards: 3</p>
-                    <p>Retards justifiés: 1</p>
-                    <p>Retards non justifiés: 2</p>
-                    <p>Absences: 1</p>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
