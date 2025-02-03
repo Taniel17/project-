@@ -34,7 +34,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: black;
     padding: 1rem 2rem;
     color: white;
     border-radius: 1rem;
@@ -63,7 +63,7 @@ h3 {
 }
 
 .navbar-btn {
-    background-color: #007bff;
+    background-color: red;
     border: none;
     padding: 0.5rem 1rem;
     color: white;
@@ -128,7 +128,7 @@ table {
 }
 
 tr:hover {
-    background-color:  #637d96;
+    background-color:  rgb(196, 188, 188);
 }
 
 th, td {
@@ -142,7 +142,7 @@ th {
     text-align: left;
     padding: 8px 12px;
     font-size: 1rem;
-    background-color: #555;
+    background-color: black;
 }
 
 .schedule {
