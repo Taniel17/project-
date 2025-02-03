@@ -8,52 +8,52 @@
     <title>Notes des élèves</title>
 </head>
 <body>
-        <nav class="navbar">
-            <div class="navbar-logo">Espace Elève</div>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
+    <nav class="navbar">
+        <div class="navbar-logo">Espace Elève</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="navbar-menu">
+            <a href="#">Emploi du temps</a>
+            <a href="#">Devoirs</a>
+            <a href="#">Mails</a>
+            <a href="/app/templates/student/notes.html">Notes</a>
+            <a href="#">Présence</a>
+        </div>
+        <button class="navbar-btn">Déconnexion</button>
+    </nav>
+    <h1>Bonjour, Mathis</h1>
+    <div class="container">
+        <div class="schedule">
+            <h1>Emploi du Temps</h1>
+            <h3>Lundi</h3>
+            <div class="card">
+                <div class="course-title">Mathématiques</div>
+                <div class="course-time">08:00 - 10:00</div>
             </div>
-            <div class="navbar-menu">
-                <a href="#">Emploi du temps</a>
-                <a href="#">Devoirs</a>
-                <a href="#">Mails</a>
-                <a href="#">Notes</a>
-                <a href="#">Présence</a>
+            <div class="card">
+                <div class="course-title">Histoire-Géographie</div>
+                <div class="course-time">10:00 - 11:00</div>
             </div>
-            <button class="navbar-btn">Déconnexion</button>
-        </nav>
-            <h1>Bonjour, Mathis</h1>
-            <div class="note">
-            <div class="schedule">
-                <h2>Emploi du Temps</h2>
-                    <h3>Lundi</h3>
-                <div class="card">
-                    <div class="course-title">Mathématiques</div>
-                    <div class="course-time">08:00 - 10:00</div>
-                </div>
-                <div class="card">
-                    <div class="course-title">Histoire-Géographie</div>
-                    <div class="course-time">10:00 - 11:00</div>
-                </div>
-                <div class="card">
-                    <div class="course-title">Anglais</div>
-                    <div class="course-time">11:00 - 12:00</div>
-                </div>
-                <div class="card">
-                    <div class="course-title">Sciences de la Vie et de la Terre (SVT)</div>
-                    <div class="course-time">13:00 - 15:00</div>
-                </div>
-                <div class="card">
-                    <div class="course-title">Éducation Physique et Sportive (EPS)</div>
-                    <div class="course-time">15:00 - 17:00</div>
-                </div>
+            <div class="card">
+                <div class="course-title">Anglais</div>
+                <div class="course-time">11:00 - 12:00</div>
             </div>
-            
-                <div class="retard">
-                    <h2>Retard</h2>
-             
+            <div class="card">
+                <div class="course-title">Sciences de la Vie et de la Terre (SVT)</div>
+                <div class="course-time">13:00 - 15:00</div>
+            </div>
+            <div class="card">
+                <div class="course-title">Éducation Physique et Sportive (EPS)</div>
+                <div class="course-time">15:00 - 17:00</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="retard">
+                <h2>Retards</h2>
+                <div class="colonne">
                     <div class="card">
                         <p>Nombre de retards : 3</p>
                     </div>
@@ -67,84 +67,26 @@
                         <p>Absences : 1</p>
                     </div>
                 </div>
-                <div class="Mail">
-                    <p>Nombre de retards : 3</p>
-
+            </div>
+            <div class="mail">
+                <h2>Mails</h2>
+                <div class="colonne">
+                    <div class="card">
+                        <p>Non lus : 10</p>
+                    </div>
+                    <div class="card">
+                        <p>Important : 3</p>
+                    </div>
                 </div>
-            <!-- <table>
-                <tr>
-                    <th>Matières</th>
-                    <th>Professeurs</th> 
-                    <th>Notes</th>
-                    <th>Moyennes</th>
-                </tr>
-                <tr>
-                    <td>Français</td>
-                    <td>Noeuil</td>
-                    <td>10</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>Mathématiques</td>
-                    <td>Noeuil</td>
-                    <td>13</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>Anglais</td>
-                    <td>Noeuil</td>
-                    <td>13</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>Histoire-Géographie</td>
-                    <td>Noeuil</td>
-                    <td>13</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>Philosophie</td>
-                    <td>Noeuil</td>
-                    <td>13</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>Espagnol</td>
-                    <td>Noeuil</td>
-                    <td>13</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>Musique</td>
-                    <td>Noeuil</td>
-                    <td>13</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>Arts Plastique</td>
-                    <td>Noeuil</td>
-                    <td>13</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>EPS</td>
-                    <td>Noeuil</td>
-                    <td>13</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>Physique-Chimie</td>
-                    <td>Noeuil</td>
-                    <td>13</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>SVT</td>
-                    <td>Noeuil</td>
-                    <td>13</td>
-                    <td>13</td>
-                </tr>
-            </table> -->
+            </div>
         </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
+
